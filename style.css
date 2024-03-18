@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'MalupetNaFont';
+    src: url(fonts/The\ Constellation.ttf);
+  }
+@font-face {
+      font-family: 'MalupetNaFont1';
+      src: url(fonts/LTSoul-Medium.otf);
+}
+@font-face {
+    font-family: 'MalupetNaFont2';
+    src: url(fonts/Sunny\ Spells\ Basic.ttf);
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8751A;
+}
+.heading {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+.menu {
+    margin: 20px auto;
+    width: 50%;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu li {
+    margin-bottom: 10px;
+    font-family: 'MalupetNaFont1';
+    font-size: 18px;
+}
+.interactable {
+    margin: 0 auto;
+    width: 50%;
+}
+.interactable p {
+    font-size: 20px;
+    font-family: 'MalupetNaFont2';
+}
+.adding_removing {
+    margin-bottom: 20px;
+}
+.heading h2{
+    font-family: 'MalupetNaFont';
+    font-size: 30px;
+    color: #3B7080;
+}
+.heading p{
+    font-family: 'MalupetNaFont2';
+    font-size: 20px;
+    color: #3B7080;
+}
+.heading{
+    background-color: #FDA403;
+}
+input[type="text"], select, input[type="button"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+    width: 500px;
+    padding: 10px;
+    border: 3px solid #898121;
+    border-radius: 5px;
+}
+input[type="button"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border: 3px solid #898121;
+    background-color: #E5C287;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #FDA403;
+}

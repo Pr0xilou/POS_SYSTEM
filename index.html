@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>CALLEJERAS FILIPINAS</h2>
+        <p>Lasang kalye sa sarap!</p>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>Borgir - 60 pesos</li>
+            <li>Fries - 50 pesos</li>
+            <li>Fishbol - 20 pesos</li>
+            <li>Kikiam - 25 pesos</li>
+        </ul>
+    </div>
+    <div class="interactable">
+        <form class="adding_removing">
+            <input type="button" value="Add a food item" onclick="add_order()">
+            <input type="button" value="Remove a food item" onclick="remove_order()">
+            <p>Choice</p>
+            <select name="menu" id="menu">
+                <option value="Burger">Borgir</option>
+                <option value="Fries">Fries</option>
+                <option value="Fishbol">Fishbol</option>
+                <option value="Kikiam">Kikiam</option>
+            </select>
+            <p>Quantity</p>
+            <input type="text" id="quantity" name="quantity">
+        </form>
+        <br>
+        <div class="finalize">
+            <input type="button" value="Finalize Order" onclick="finalize_order()">
+        </div>
+        <form class="paying_out">   
+            <p>Cash</p>
+            <input type="text" id="cash" name="cash">
+            <input type="button" value="Pay" onclick="pay_out()">
+        </form>
+        <br>
+        <br>
+        <div class="reset">
+            <input type="button" value="Reset" onclick="reset_order()">
+        </div>    
+    </div>
+</body>
+</html>
